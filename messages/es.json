@@ -9,7 +9,7 @@
   },
   "About": {
     "title": "Acerca de mí",
-    "summary": "A finales de 2022, dejé mi trabajo como ingeniero de software para dedicarme a tiempo completo a crear y escalar mis propios negocios SaaS. En el pasado, [cursé una doble titulación en informática y negocios](/#education), [hice prácticas en grandes empresas tecnológicas de Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE) y [participé en más de 21 hackathons por diversión](/#hackathons). También tuve el placer de formar parte de la primera cohorte presencial de buildspace llamada [buildspace sf1](https://buildspace.so/sf1)."
+    "summary": "En 2024, finalicé mi labor como monitor de sistemas en la Universidad Popular del Cesar, donde adquirí experiencia práctica en soporte técnico y gestión de sistemas. Obtuve el título de Ingeniero de Sistemas, consolidando una sólida base en desarrollo de software. He trabajado en el diseño y desarrollo de aplicaciones web y móviles, colaborando tanto de manera independiente como en equipos multidisciplinarios para clientes de diversos sectores."
   },
   "Work": {
     "title": "Experiencia Laboral"
@@ -33,8 +33,8 @@
   "Contact": {
     "title": "Contacto",
     "subtitle": "Ponte en contacto",
-    "description_pre": "¿Quieres hablar? Simplemente envíame un mensaje ",
-    "description_post": " y te responderé cuando pueda. Ignoraré todas las solicitudes comerciales.",
-    "twitterText": "con una pregunta directa en twitter"
+    "description_pre": "¿Quieres hablar? Simplemente envíame un email a ",
+    "description_post": " o utiliza los enlaces disponibles en esta sección para contactarme. Responderé a tu consulta lo antes posible.",
+    "twitterText": "me@michaelt.engineer"
   }
 }

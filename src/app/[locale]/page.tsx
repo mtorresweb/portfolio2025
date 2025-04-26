@@ -6,7 +6,6 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
-import Link from "next/link";
 import Markdown from "react-markdown";
 import { setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
@@ -224,12 +223,9 @@ export default async function Page({ params }: { params: { locale: string } }) {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 {tContact("description_pre")}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
+                <span className=" text-foreground">
                   {tContact("twitterText")}
-                </Link>
+                </span>
                 {tContact("description_post")}
               </p>
             </div>

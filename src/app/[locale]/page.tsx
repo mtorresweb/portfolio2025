@@ -8,10 +8,20 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-
+import { setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 const BLUR_FADE_DELAY = 0.04;
 
-export default function Page() {
+export default async function Page({ params }: { params: { locale: string } }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">

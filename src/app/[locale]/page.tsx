@@ -1,5 +1,5 @@
 import React from "react";
-import { HackathonCard } from "@/components/hackathon-card";
+import { CertificationCard } from "@/components/certification-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -32,9 +32,9 @@ export default async function Page({ params }: { params: { locale: string } }) {
   const tEducation = await getTranslations({ locale, namespace: "Education" });
   const tSkills = await getTranslations({ locale, namespace: "Skills" });
   const tProjects = await getTranslations({ locale, namespace: "Projects" });
-  const tHackathons = await getTranslations({
+  const tCertifications = await getTranslations({
     locale,
-    namespace: "Hackathons",
+    namespace: "certifications",
   });
   const tContact = await getTranslations({ locale, namespace: "Contact" });
 
@@ -171,20 +171,20 @@ export default async function Page({ params }: { params: { locale: string } }) {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="certifications">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  {tHackathons("title")}
+                  {tCertifications("title")}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {tHackathons("subtitle")}
+                  {tCertifications("subtitle")}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {tHackathons("description", {
-                    count: DATA.hackathons.length,
+                  {tCertifications("description", {
+                    count: DATA.certifications.length,
                   })}
                 </p>
               </div>
@@ -192,12 +192,12 @@ export default async function Page({ params }: { params: { locale: string } }) {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.certifications.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  <HackathonCard
+                  <CertificationCard
                     title={project.title}
                     description={project.description}
                     location={project.location}

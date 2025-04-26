@@ -25,10 +25,10 @@
     "subtitle": "Mira mis últimos trabajos",
     "description": "He trabajado en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas. Aquí hay algunos de mis favoritos."
   },
-  "Hackathons": {
-    "title": "Hackathons",
-    "subtitle": "Me gusta construir cosas",
-    "description": "Durante mi tiempo en la universidad, asistí a más de {count} hackathons. Personas de todo el país se reunían para crear cosas increíbles en 2-3 días. Fue revelador ver las infinitas posibilidades que un grupo de personas motivadas y apasionadas podían hacer realidad."
+  "certifications": {
+    "title": "Certificaciones",
+    "subtitle": "Algunos de mis logros",
+    "description": "Durante mi tiempo en la universidad, asistí a más de {count} cursos y talleres, lo que me permitió adquirir habilidades valiosas en diversas áreas. Aquí hay una lista de algunas de las certificaciones que he obtenido."
   },
   "Contact": {
     "title": "Contacto",

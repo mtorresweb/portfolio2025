@@ -27,33 +27,27 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/mtorresweb",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "www.linkedin.com/in/michaeltrs",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/Michael_Tors?t=VX1ZY_nmI0uJu4GExnyoIg&s=08",
         icon: Icons.x,
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: true,
-      },
       email: {
-        name: "Send Email",
+        name: "Email",
         url: "mailto:me@michaelt.engineer",
         icon: Icons.email,
 
@@ -83,7 +77,7 @@ export const DATA = {
       degree: "Ingeniero de Sistemas",
       logoUrl: "/upc-logo.png",
       start: "2020",
-      end: "2025",
+      end: "2024",
     },
     {
       school: "Cambridge",
@@ -234,7 +228,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
-  hackathons: [
+  certifications: [
     {
       title: "Hack Western 5",
       dates: "November 23rd - 25th, 2018",
@@ -462,11 +456,6 @@ export const DATA = {
           href: "https://devpost.com/software/pocketdoc-react-native",
         },
         {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/dillionverma/pocketdoc-react-native",
@@ -495,11 +484,6 @@ export const DATA = {
           title: "Devpost",
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
         },
         {
           title: "Source",

@@ -1,9 +1,9 @@
+import React from "react";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
@@ -12,6 +12,9 @@ import { setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
+import { LanguageSwitcher } from "@/components/language-switcher";
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: { params: { locale: string } }) {
@@ -22,45 +25,56 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   // Enable static rendering
   setRequestLocale(locale);
+
+  // Get translations with the proper namespace pattern
+  const tHero = await getTranslations({ locale, namespace: "Hero" });
+  const tAbout = await getTranslations({ locale, namespace: "About" });
+  const tWork = await getTranslations({ locale, namespace: "Work" });
+  const tEducation = await getTranslations({ locale, namespace: "Education" });
+  const tSkills = await getTranslations({ locale, namespace: "Skills" });
+  const tProjects = await getTranslations({ locale, namespace: "Projects" });
+  const tHackathons = await getTranslations({
+    locale,
+    namespace: "Hackathons",
+  });
+  const tContact = await getTranslations({ locale, namespace: "Contact" });
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
+          <div className="flex justify-between items-start">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={tHero("greeting", { name: DATA.name.split(" ")[0] })}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+                text={tHero("description")}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+            <BlurFade delay={BLUR_FADE_DELAY} className="flex-shrink-0">
+              <LanguageSwitcher currentLocale={locale} />
             </BlurFade>
           </div>
         </div>
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">{tAbout("title")}</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown>{DATA.summary}</Markdown>
+          <Markdown>{tAbout("summary")}</Markdown>
         </BlurFade>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">{tWork("title")}</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -85,7 +99,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h2 className="text-xl font-bold">{tEducation("title")}</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -108,7 +122,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">{tSkills("title")}</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
@@ -125,15 +139,13 @@ export default async function Page({ params }: { params: { locale: string } }) {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                  {tProjects("title")}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  {tProjects("subtitle")}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  {tProjects("description")}
                 </p>
               </div>
             </div>
@@ -166,18 +178,15 @@ export default async function Page({ params }: { params: { locale: string } }) {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  {tHackathons("title")}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  {tHackathons("subtitle")}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  {tHackathons("description", {
+                    count: DATA.hackathons.length,
+                  })}
                 </p>
               </div>
             </div>
@@ -208,21 +217,20 @@ export default async function Page({ params }: { params: { locale: string } }) {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+                {tContact("title")}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                {tContact("subtitle")}
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                {tContact("description_pre")}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                  {tContact("twitterText")}
+                </Link>
+                {tContact("description_post")}
               </p>
             </div>
           </BlurFade>

@@ -2,5 +2,39 @@
   "Metadata": {
     "name": "Michael Torres",
     "description": "Ingeniero de sistemas con experiencia en el desarrollo de aplicaciones web y móviles. Me apasiona aprender nuevas tecnologías y resolver problemas complejos. Busco un entorno desafiante donde pueda aplicar mis habilidades y seguir creciendo profesionalmente."
+  },
+  "Hero": {
+    "greeting": "Hola, soy {name} 👋",
+    "description": "Ingeniero de sistemas con experiencia en el desarrollo de aplicaciones web y móviles. Me apasiona aprender nuevas tecnologías y resolver problemas complejos. Busco un entorno desafiante donde pueda aplicar mis habilidades y seguir creciendo profesionalmente."
+  },
+  "About": {
+    "title": "Acerca de mí",
+    "summary": "A finales de 2022, dejé mi trabajo como ingeniero de software para dedicarme a tiempo completo a crear y escalar mis propios negocios SaaS. En el pasado, [cursé una doble titulación en informática y negocios](/#education), [hice prácticas en grandes empresas tecnológicas de Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE) y [participé en más de 21 hackathons por diversión](/#hackathons). También tuve el placer de formar parte de la primera cohorte presencial de buildspace llamada [buildspace sf1](https://buildspace.so/sf1)."
+  },
+  "Work": {
+    "title": "Experiencia Laboral"
+  },
+  "Education": {
+    "title": "Educación"
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "Projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Mira mis últimos trabajos",
+    "description": "He trabajado en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas. Aquí hay algunos de mis favoritos."
+  },
+  "Hackathons": {
+    "title": "Hackathons",
+    "subtitle": "Me gusta construir cosas",
+    "description": "Durante mi tiempo en la universidad, asistí a más de {count} hackathons. Personas de todo el país se reunían para crear cosas increíbles en 2-3 días. Fue revelador ver las infinitas posibilidades que un grupo de personas motivadas y apasionadas podían hacer realidad."
+  },
+  "Contact": {
+    "title": "Contacto",
+    "subtitle": "Ponte en contacto",
+    "description_pre": "¿Quieres hablar? Simplemente envíame un mensaje ",
+    "description_post": " y te responderé cuando pueda. Ignoraré todas las solicitudes comerciales.",
+    "twitterText": "con una pregunta directa en twitter"
   }
 }

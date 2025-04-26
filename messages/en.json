@@ -1,1 +1,40 @@
-{}
+{
+  "Metadata": {
+    "name": "Michael Torres",
+    "description": "System engineer with experience in web and mobile application development. I am passionate about learning new technologies and solving complex problems. I'm looking for a challenging environment where I can apply my skills and continue growing professionally."
+  },
+  "Hero": {
+    "greeting": "Hi, I'm {name} 👋",
+    "description": "System engineer with experience in web and mobile application development. I am passionate about learning new technologies and solving complex problems. I'm looking for a challenging environment where I can apply my skills and continue growing professionally."
+  },
+  "About": {
+    "title": "About",
+    "summary": "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1)."
+  },
+  "Work": {
+    "title": "Work Experience"
+  },
+  "Education": {
+    "title": "Education"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "subtitle": "Check out my latest work",
+    "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites."
+  },
+  "Hackathons": {
+    "title": "Hackathons",
+    "subtitle": "I like building things",
+    "description": "During my time in university, I attended {count}+ hackathons. People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals."
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "description_pre": "Want to chat? Just shoot me a dm ",
+    "description_post": " and I'll respond whenever I can. I will ignore all soliciting.",
+    "twitterText": "with a direct question on twitter"
+  }
+}

@@ -1,21 +1,62 @@
 {
   "Metadata": {
     "name": "Michael Torres",
-    "description": "System engineer with experience in web and mobile application development. I am passionate about learning new technologies and solving complex problems. I'm looking for a challenging environment where I can apply my skills and continue growing professionally."
+    "description": "Full-stack Systems Engineer with expertise in React, Next.js, and Node.js."
   },
   "Hero": {
     "greeting": "Hi, I'm {name} 👋",
-    "description": "System engineer with experience in web and mobile application development. I am passionate about learning new technologies and solving complex problems. I'm looking for a challenging environment where I can apply my skills and continue growing professionally."
+    "description": "Full-stack Systems Engineer with expertise in React, Next.js, and Node.js."
   },
   "About": {
     "title": "About",
-    "summary": "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1)."
+    "summary": "During the second semester of 2024, I served as a Systems Monitor at Universidad Popular del Cesar, applying practical knowledge in IT infrastructure management and application development. My expertise focuses on front-end technologies like React and Next.js, complemented by strong back-end development skills with Node.js and database systems. I excel in collaborative environments and am passionate about creating elegant solutions to complex technical challenges."
   },
   "Work": {
-    "title": "Work Experience"
+    "title": "Work Experience",
+    "items": [
+      {
+        "company": "Universidad Popular del Cesar",
+        "href": "https://aguachica.unicesar.edu.co/",
+        "title": "Systems Monitor",
+        "location": "On-site",
+        "start": "09/2024",
+        "end": "12/2024",
+        "description": "As a Systems Monitor, I provided technical support to students and faculty, assisting with system management and troubleshooting. I also contributed to the development of internal applications, enhancing the university's digital infrastructure."
+      }
+    ]
   },
   "Education": {
-    "title": "Education"
+    "title": "Education",
+    "items": [
+      {
+        "school": "Universidad Popular del Cesar",
+        "href": "https://aguachica.unicesar.edu.co/",
+        "degree": "Systems Engineering",
+        "start": "2020",
+        "end": "2024"
+      },
+      {
+        "school": "Cambridge",
+        "href": "https://www.cambridgeenglish.org/exams-and-tests/linguaskill/",
+        "degree": "Linguaskill English Test (CEFR) - B1",
+        "start": "2022",
+        "end": "2022"
+      },
+      {
+        "school": "Open English",
+        "href": "https://www.openenglish.com/",
+        "degree": "English B2",
+        "start": "2022",
+        "end": "2022"
+      },
+      {
+        "school": "SENA",
+        "href": "https://ibo.org",
+        "degree": "Technical Degree in Administrative Assistance",
+        "start": "2018",
+        "end": "2019"
+      }
+    ]
   },
   "Skills": {
     "title": "Skills"
@@ -25,16 +66,65 @@
     "subtitle": "Check out my latest work",
     "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites."
   },
-  "Hackathons": {
-    "title": "Hackathons",
-    "subtitle": "I like building things",
-    "description": "During my time in university, I attended {count}+ hackathons. People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals."
+  "Certifications": {
+    "title": "Certifications",
+    "subtitle": "My professional achievements",
+    "description": "Key certifications that highlight my technical expertise and professional growth.",
+    "items": [
+      {
+        "title": "Switching, Routing and Wireless Essentials",
+        "dates": "Nov 27, 2023",
+        "location": "Universidad Popular del Cesar",
+        "description": "Gained expertise in CISCO Switching, Routing, and Wireless Essentials, covering fundamental concepts and practical applications.",
+        "certificate": "Certificate"
+      },
+      {
+        "title": "Introduction to networks",
+        "dates": "May 31, 2023",
+        "location": "Universidad Popular del Cesar",
+        "description": "Acquired foundational knowledge of CISCO networking, including protocols, topologies, and security practices.",
+        "certificate": "Certificate"
+      },
+      {
+        "title": "SCRUM for software development",
+        "dates": "May 11, 2023",
+        "location": "Remote",
+        "description": "Developed a strong understanding of SCRUM methodology, focusing on principles, roles, and best practices for software development."
+      },
+      {
+        "title": "API RESTful",
+        "dates": "Apr 12, 2023",
+        "location": "Remote",
+        "description": "Learned to design and implement secure and efficient RESTful APIs, emphasizing authentication and scalability.",
+        "certificate": "Certificate"
+      },
+      {
+        "title": "Professional GIT",
+        "dates": "Nov 14, 2022",
+        "location": "Remote",
+        "description": "Mastered advanced Git workflows and best practices for version control in collaborative environments.",
+        "certificate": "Certificate"
+      },
+      {
+        "title": "Cambridge Linguaskill",
+        "dates": "October 21, 2022",
+        "location": "Remote",
+        "description": "Earned a B1 certification through the Cambridge Linguaskill test, demonstrating effective communication skills in English for professional and academic contexts."
+      },
+      {
+        "title": "Open English",
+        "dates": "October 17, 2022",
+        "location": "Remote",
+        "description": "Obtained a B2 certification from Open English, showcasing advanced proficiency in English, including fluency in conversational and written communication.",
+        "certificate": "Certificate"
+      }
+    ]
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Get in Touch",
-    "description_pre": "Want to chat? Just shoot me a dm ",
-    "description_post": " and I'll respond whenever I can. I will ignore all soliciting.",
-    "twitterText": "with a direct question on twitter"
+    "description_pre": "Want to chat? Just shoot me an email at ",
+    "description_post": " or use any of the social links provided. I'll respond as soon as I can!",
+    "twitterText": "me@michaelt.engineer"
   }
 }

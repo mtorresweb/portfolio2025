@@ -14,6 +14,33 @@ import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { LanguageSwitcher } from "@/components/language-switcher";
 
+// Define interfaces for our translated data types
+interface WorkItem {
+  company: string;
+  href: string;
+  title: string;
+  location: string;
+  start: string;
+  end: string;
+  description: string;
+}
+
+interface EducationItem {
+  school: string;
+  href: string;
+  degree: string;
+  start: string;
+  end: string;
+}
+
+interface CertificationItem {
+  title: string;
+  dates: string;
+  location: string;
+  description: string;
+  certificate: string;
+}
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: { params: { locale: string } }) {
@@ -34,7 +61,7 @@ export default async function Page({ params }: { params: { locale: string } }) {
   const tProjects = await getTranslations({ locale, namespace: "Projects" });
   const tCertifications = await getTranslations({
     locale,
-    namespace: "certifications",
+    namespace: "Certifications",
   });
   const tContact = await getTranslations({ locale, namespace: "Contact" });
 
@@ -75,19 +102,19 @@ export default async function Page({ params }: { params: { locale: string } }) {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">{tWork("title")}</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
+          {tWork.raw("items").map((work: WorkItem, id: number) => (
             <BlurFade
               key={work.company}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <ResumeCard
                 key={work.company}
-                logoUrl={work.logoUrl}
+                logoUrl={DATA.work[id]?.logoUrl || ""}
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
                 href={work.href}
-                badges={work.badges}
+                badges={DATA.work[id]?.badges || []}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
@@ -100,22 +127,24 @@ export default async function Page({ params }: { params: { locale: string } }) {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">{tEducation("title")}</h2>
           </BlurFade>
-          {DATA.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
-              <ResumeCard
+          {tEducation
+            .raw("items")
+            .map((education: EducationItem, id: number) => (
+              <BlurFade
                 key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
-              />
-            </BlurFade>
-          ))}
+                delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              >
+                <ResumeCard
+                  key={education.school}
+                  href={education.href}
+                  logoUrl={DATA.education[id]?.logoUrl || ""}
+                  altText={education.school}
+                  title={education.school}
+                  subtitle={education.degree}
+                  period={`${education.start} - ${education.end}`}
+                />
+              </BlurFade>
+            ))}
         </div>
       </section>
       <section id="skills">
@@ -183,30 +212,33 @@ export default async function Page({ params }: { params: { locale: string } }) {
                   {tCertifications("subtitle")}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {tCertifications("description", {
-                    count: DATA.certifications.length,
-                  })}
+                  {tCertifications("description")}
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.certifications.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <CertificationCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
+              {tCertifications
+                .raw("items")
+                .map((cert: CertificationItem, id: number) => (
+                  <BlurFade
+                    key={cert.title + cert.dates}
+                    delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                  >
+                    <CertificationCard
+                      title={cert.title}
+                      description={cert.description}
+                      location={cert.location}
+                      dates={cert.dates}
+                      image={DATA.certifications[id]?.image || ""}
+                      links={DATA.certifications[id]?.links.map((link) => ({
+                        ...link,
+                        title: cert.certificate,
+                      }))}
+                    />
+                  </BlurFade>
+                ))}
             </ul>
           </BlurFade>
         </div>

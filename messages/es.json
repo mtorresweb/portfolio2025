@@ -1,21 +1,62 @@
 {
   "Metadata": {
     "name": "Michael Torres",
-    "description": "Ingeniero de sistemas con experiencia en el desarrollo de aplicaciones web y móviles. Me apasiona aprender nuevas tecnologías y resolver problemas complejos. Busco un entorno desafiante donde pueda aplicar mis habilidades y seguir creciendo profesionalmente."
+    "description": "Ingeniero de Sistemas full-stack con experiencia en React, Next.js y Node.js."
   },
   "Hero": {
     "greeting": "Hola, soy {name} 👋",
-    "description": "Ingeniero de sistemas con experiencia en el desarrollo de aplicaciones web y móviles. Me apasiona aprender nuevas tecnologías y resolver problemas complejos. Busco un entorno desafiante donde pueda aplicar mis habilidades y seguir creciendo profesionalmente."
+    "description": "Ingeniero de Sistemas full-stack con experiencia en React, Next.js y Node.js."
   },
   "About": {
     "title": "Acerca de mí",
-    "summary": "En 2024, finalicé mi labor como monitor de sistemas en la Universidad Popular del Cesar, donde adquirí experiencia práctica en soporte técnico y gestión de sistemas. Obtuve el título de Ingeniero de Sistemas, consolidando una sólida base en desarrollo de software. He trabajado en el diseño y desarrollo de aplicaciones web y móviles, colaborando tanto de manera independiente como en equipos multidisciplinarios para clientes de diversos sectores."
+    "summary": "Durante el segundo semestre de 2024, trabajé como Monitor de Sistemas en la Universidad Popular del Cesar, aplicando conocimientos prácticos en gestión de infraestructura informática y desarrollo de aplicaciones. Mi experiencia se centra en tecnologías front-end como React y Next.js, complementada con sólidas habilidades en desarrollo back-end con Node.js y sistemas de bases de datos. Destaco en entornos colaborativos y me apasiona crear soluciones elegantes para desafíos técnicos complejos."
   },
   "Work": {
-    "title": "Experiencia Laboral"
+    "title": "Experiencia Laboral",
+    "items": [
+      {
+        "company": "Universidad Popular del Cesar",
+        "href": "https://aguachica.unicesar.edu.co/",
+        "title": "Monitor de Sistemas",
+        "location": "Presencial",
+        "start": "09/2024",
+        "end": "12/2024",
+        "description": "Como Monitor de Sistemas, proporcioné soporte técnico a estudiantes y profesores, asistiendo en la gestión de sistemas y resolución de problemas. También contribuí al desarrollo de aplicaciones internas, mejorando la infraestructura digital de la universidad."
+      }
+    ]
   },
   "Education": {
-    "title": "Educación"
+    "title": "Educación",
+    "items": [
+      {
+        "school": "Universidad Popular del Cesar",
+        "href": "https://aguachica.unicesar.edu.co/",
+        "degree": "Ingeniería de Sistemas",
+        "start": "2020",
+        "end": "2024"
+      },
+      {
+        "school": "Cambridge",
+        "href": "https://www.cambridgeenglish.org/exams-and-tests/linguaskill/",
+        "degree": "Prueba de inglés Linguaskill (MCER) - B1",
+        "start": "2022",
+        "end": "2022"
+      },
+      {
+        "school": "Open English",
+        "href": "https://www.openenglish.com/",
+        "degree": "Inglés B2",
+        "start": "2022",
+        "end": "2022"
+      },
+      {
+        "school": "SENA",
+        "href": "https://ibo.org",
+        "degree": "Técnico en Asistencia Administrativa",
+        "start": "2018",
+        "end": "2019"
+      }
+    ]
   },
   "Skills": {
     "title": "Habilidades"
@@ -25,10 +66,59 @@
     "subtitle": "Mira mis últimos trabajos",
     "description": "He trabajado en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas. Aquí hay algunos de mis favoritos."
   },
-  "certifications": {
+  "Certifications": {
     "title": "Certificaciones",
-    "subtitle": "Algunos de mis logros",
-    "description": "Durante mi tiempo en la universidad, asistí a más de {count} cursos y talleres, lo que me permitió adquirir habilidades valiosas en diversas áreas. Aquí hay una lista de algunas de las certificaciones que he obtenido."
+    "subtitle": "Mis logros profesionales",
+    "description": "Certificaciones clave que destacan mi experiencia técnica y crecimiento profesional.",
+    "items": [
+      {
+        "title": "Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas",
+        "dates": "27 Nov, 2023",
+        "location": "Universidad Popular del Cesar",
+        "description": "Adquirí conocimientos clave en conmutación, enrutamiento y redes inalámbricas con enfoque en conceptos fundamentales y aplicaciones prácticas.",
+        "certificate": "Certificado"
+      },
+      {
+        "title": "Introducción a las redes",
+        "dates": "31 May, 2023",
+        "location": "Universidad Popular del Cesar",
+        "description": "Obtuve una base sólida en redes CISCO, incluyendo protocolos, topologías y prácticas de seguridad.",
+        "certificate": "Certificado"
+      },
+      {
+        "title": "SCRUM para desarrollo de software",
+        "dates": "11 May, 2023",
+        "location": "Remoto",
+        "description": "Desarrollé un entendimiento profundo de la metodología SCRUM, enfocándome en principios, roles y mejores prácticas para el desarrollo de software."
+      },
+      {
+        "title": "API RESTful",
+        "dates": "12 Abr, 2023",
+        "location": "Remoto",
+        "description": "Aprendí a diseñar e implementar APIs RESTful seguras y eficientes, con énfasis en autenticación y escalabilidad.",
+        "certificate": "Certificado"
+      },
+      {
+        "title": "GIT Profesional",
+        "dates": "14 Nov, 2022",
+        "location": "Remoto",
+        "description": "Dominé flujos de trabajo avanzados y mejores prácticas de Git para control de versiones en entornos colaborativos.",
+        "certificate": "Certificado"
+      },
+      {
+        "title": "Cambridge Linguaskill",
+        "dates": "21 Oct, 2022",
+        "location": "Remoto",
+        "description": "Obtuve la certificación B1 a través del examen Cambridge Linguaskill, demostrando habilidades efectivas de comunicación en inglés para contextos profesionales y académicos."
+      },
+      {
+        "title": "Open English",
+        "dates": "17 Oct, 2022",
+        "location": "Remoto",
+        "description": "Logré la certificación B2 de Open English, destacando mi dominio avanzado del inglés, incluyendo fluidez en comunicación conversacional y escrita.",
+        "certificate": "Certificado"
+      }
+    ]
   },
   "Contact": {
     "title": "Contacto",

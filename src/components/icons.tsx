@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon } from "lucide-react";
+import { File, GlobeIcon, MailIcon } from "lucide-react";
 import ThemedIcon from "./themed-icon";
 import Image from "next/image";
 
@@ -32,4 +32,5 @@ export const Icons = {
       className={props.className}
     />
   ),
+  filePdf: (props: IconProps) => <File {...props} />,
 };

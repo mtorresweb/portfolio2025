@@ -71,10 +71,10 @@ export function ProjectCard({
         )}
       </Link>
       <CardHeader className="px-2">
-        <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+        <div className="space-y-1 text-base">
+          <CardTitle className="mt-1 text-lg">{title}</CardTitle>
           <time className="font-sans text-xs">{dates}</time>
-          <div className="hidden font-sans text-xs underline print:visible">
+          <div className="hidden font-sans text-sm underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
           <Markdown>{description}</Markdown>
@@ -85,7 +85,7 @@ export function ProjectCard({
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-1 py-0 text-[10px]"
+                className="px-1 py-0 text-sm"
                 variant="secondary"
                 key={tag}
               >

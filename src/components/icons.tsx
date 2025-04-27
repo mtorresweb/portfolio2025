@@ -1,4 +1,17 @@
-import { File, GlobeIcon, MailIcon } from "lucide-react";
+import {
+  BookOpenIcon,
+  BriefcaseIcon,
+  IdCard,
+  ContactIcon,
+  File,
+  GlobeIcon,
+  HomeIcon,
+  MailIcon,
+  MessageSquareIcon,
+  UserIcon,
+  ShieldCheck,
+  FolderOpen,
+} from "lucide-react";
 import ThemedIcon from "./themed-icon";
 import Image from "next/image";
 
@@ -6,7 +19,16 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
+  shield: (props: IconProps) => <ShieldCheck {...props} />,
+  folder: (props: IconProps) => <FolderOpen {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
+  home: (props: IconProps) => <HomeIcon {...props} />,
+  user: (props: IconProps) => <UserIcon {...props} />,
+  work: (props: IconProps) => <BriefcaseIcon {...props} />,
+  education: (props: IconProps) => <BookOpenIcon {...props} />,
+  projects: (props: IconProps) => <MessageSquareIcon {...props} />,
+  certifications: (props: IconProps) => <IdCard {...props} />,
+  contact: (props: IconProps) => <ContactIcon {...props} />,
   x: (props: IconProps) => (
     <ThemedIcon
       lightVariant="/icons/X_light.svg"

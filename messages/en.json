@@ -126,5 +126,16 @@
     "description_pre": "Want to chat? Just shoot me an email at ",
     "description_post": " or use any of the social links provided. I'll respond as soon as I can!",
     "twitterText": "me@michaelt.engineer"
+  },
+  "Navigation": {
+    "hero": "Home",
+    "about": "About",
+    "work": "Work Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "theme": "Theme"
   }
 }

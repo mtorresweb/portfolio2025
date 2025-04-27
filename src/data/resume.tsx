@@ -1,5 +1,4 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Michael Torres",
@@ -24,7 +23,16 @@ export const DATA = {
     "Docker",
     "Git",
   ],
-  navbar: [{ href: "/", icon: HomeIcon }],
+  navbar: [
+    { href: "#hero", icon: Icons.home },
+    { href: "#about", icon: Icons.user },
+    { href: "#work", icon: Icons.work },
+    { href: "#education", icon: Icons.education },
+    { href: "#skills", icon: Icons.shield },
+    { href: "#projects", icon: Icons.folder },
+    { href: "#certifications", icon: Icons.certifications },
+    { href: "#contact", icon: Icons.contact },
+  ],
   contact: {
     social: {
       GitHub: {

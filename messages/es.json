@@ -126,5 +126,16 @@
     "description_pre": "¿Quieres hablar? Simplemente envíame un email a ",
     "description_post": " o utiliza los enlaces disponibles en esta sección para contactarme. Responderé a tu consulta lo antes posible.",
     "twitterText": "me@michaelt.engineer"
+  },
+  "Navigation": {
+    "hero": "Inicio",
+    "about": "Acerca de mí",
+    "work": "Experiencia Laboral",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "contact": "Contacto",
+    "theme": "Tema"
   }
 }

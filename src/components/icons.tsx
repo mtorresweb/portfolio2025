@@ -45,6 +45,14 @@ export const Icons = {
       {...props}
     />
   ),
+  githubInverted: (props: IconProps) => (
+    <ThemedIcon
+      darkVariant="/icons/github_light.svg"
+      lightVariant="/icons/github_dark.svg"
+      alt="GitHub"
+      {...props}
+    />
+  ),
   linkedin: (props: IconProps) => (
     <Image
       src="/icons/linkedin.svg"

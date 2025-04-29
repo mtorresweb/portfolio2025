@@ -44,6 +44,11 @@ interface CertificationItem {
   certificate: string;
 }
 
+interface ProjectItem {
+  title: string;
+  description: string;
+}
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: { params: { locale: string } }) {
@@ -189,24 +194,36 @@ export default async function Page({ params }: { params: { locale: string } }) {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
+            {DATA.projects.map((project, id) => {
+              const translatedProject = tProjects.raw("items")[
+                id
+              ] as ProjectItem;
+              return (
+                <BlurFade
                   key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={translatedProject?.title || project.title}
+                    description={
+                      translatedProject?.description || project.description
+                    }
+                    tags={project.technologies}
+                    image={project.image}
+                    imageAlign={project.imageAlign}
+                    video={project.video}
+                    links={project.links.map((link) => ({
+                      ...link,
+                      type:
+                        tProjects.raw("links")?.[link.type.toLowerCase()] ||
+                        link.type,
+                    }))}
+                  />
+                </BlurFade>
+              );
+            })}
           </div>
         </div>
       </section>

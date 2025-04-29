@@ -51,7 +51,7 @@
       },
       {
         "school": "SENA",
-        "href": "https://ibo.org",
+        "href": "https://www.sena.edu.co/",
         "degree": "Técnico en Asistencia Administrativa",
         "start": "2018",
         "end": "2019"
@@ -64,7 +64,29 @@
   "Projects": {
     "title": "Mis Proyectos",
     "subtitle": "Mira mis últimos trabajos",
-    "description": "He trabajado en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas. Aquí hay algunos de mis favoritos."
+    "description": "He trabajado en una variedad de proyectos, desde sitios web simples hasta aplicaciones web complejas. Aquí hay algunos de mis favoritos.",
+    "items": [
+      {
+        "title": "Chat en Tiempo Real",
+        "description": "Desarrollé una aplicación de chat en tiempo real con autenticación de usuarios, mensajería privada y chats grupales, utilizando React, Express y Socket.io."
+      },
+      {
+        "title": "Gestión de Proyectos y Tareas",
+        "description": "Creé una aplicación de gestión de proyectos y tareas con funciones para crear, actualizar y eliminar proyectos y tareas, usando React, Express y PostgreSQL."
+      },
+      {
+        "title": "Plantilla de Portafolio",
+        "description": "Diseñé una plantilla de portafolio utilizando React, Sass y Framer Motion, con animaciones fluidas y diseño responsivo."
+      },
+      {
+        "title": "Este Portafolio Web",
+        "description": "Desarrollé un sitio web de portafolio personal utilizando Next.js, Typescript y TailwindCSS, mostrando mis proyectos y habilidades con enfoque en rendimiento y SEO."
+      }
+    ],
+    "links": {
+      "website": "Sitio Web",
+      "source": "Código Fuente"
+    }
   },
   "Certifications": {
     "title": "Certificaciones",
@@ -123,9 +145,9 @@
   "Contact": {
     "title": "Contacto",
     "subtitle": "Ponte en contacto",
-    "description_pre": "¿Quieres hablar? Simplemente envíame un email a ",
-    "description_post": " o utiliza los enlaces disponibles en esta sección para contactarme. Responderé a tu consulta lo antes posible.",
-    "twitterText": "hello@michaelt.engineer"
+    "description_pre": "¿Quieres hablar?",
+    "description_post": " Utiliza los enlaces disponibles en esta sección para contactarme. Responderé a tu consulta lo antes posible.",
+    "twitterText": ""
   },
   "Navigation": {
     "hero": "Inicio",

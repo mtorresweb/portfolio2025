@@ -51,7 +51,7 @@
       },
       {
         "school": "SENA",
-        "href": "https://ibo.org",
+        "href": "https://www.sena.edu.co/",
         "degree": "Technical Degree in Administrative Assistance",
         "start": "2018",
         "end": "2019"
@@ -64,7 +64,29 @@
   "Projects": {
     "title": "My Projects",
     "subtitle": "Check out my latest work",
-    "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites."
+    "description": "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
+    "items": [
+      {
+        "title": "Real Time Chat",
+        "description": "Built a real-time chat application featuring user authentication, private messaging, and group chats, leveraging React, Express, and Socket.io."
+      },
+      {
+        "title": "Project and Task Management",
+        "description": "Created a project and task management application with features for creating, updating, and deleting projects and tasks, using React, Express, and PostgreSQL."
+      },
+      {
+        "title": "Portfolio Template",
+        "description": "Designed a portfolio template using React, Sass and Framer Motion, featuring smooth animations and a responsive design."
+      },
+      {
+        "title": "This Portfolio Website",
+        "description": "Engineered a personal portfolio website using Next.js, Typescript, and TailwindCSS, showcasing my projects and skills with a focus on performance and SEO."
+      }
+    ],
+    "links": {
+      "website": "Website",
+      "source": "Source"
+    }
   },
   "Certifications": {
     "title": "Certifications",
@@ -123,9 +145,9 @@
   "Contact": {
     "title": "Contact",
     "subtitle": "Get in Touch",
-    "description_pre": "Want to chat? Just shoot me an email at ",
-    "description_post": " or use any of the social links provided. I'll respond as soon as I can!",
-    "twitterText": "hello@michaelt.engineer"
+    "description_pre": "Want to chat? ",
+    "description_post": "Use any of the social links provided. I'll respond as soon as I can!",
+    "twitterText": ""
   },
   "Navigation": {
     "hero": "Home",

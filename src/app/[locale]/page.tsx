@@ -51,9 +51,13 @@ interface ProjectItem {
 
 const BLUR_FADE_DELAY = 0.04;
 
-// Update the type signature of Page to correctly handle params
-export default async function Page({ params }: { params: { locale: string } }) {
-  const { locale } = params;
+type Params = Promise<{ locale: string }>;
+
+// Update to properly await params before using them
+export default async function Page(props: { params: Params }) {
+  // Await params to get locale
+  const { locale } = await props.params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }

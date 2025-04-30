@@ -14,8 +14,10 @@ import {
 } from "lucide-react";
 import ThemedIcon from "./themed-icon";
 import Image from "next/image";
+import GitHub from "./icons/github";
+import type { SVGProps } from "react";
 
-export type IconProps = React.HTMLAttributes<SVGElement>;
+type IconProps = SVGProps<SVGSVGElement>;
 
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
@@ -29,29 +31,18 @@ export const Icons = {
   projects: (props: IconProps) => <MessageSquareIcon {...props} />,
   certifications: (props: IconProps) => <IdCard {...props} />,
   contact: (props: IconProps) => <ContactIcon {...props} />,
-  x: (props: IconProps) => (
+  x: () => (
     <ThemedIcon
       lightVariant="/icons/X_light.svg"
       darkVariant="/icons/X_dark.svg"
       alt="X"
-      {...props}
     />
   ),
   github: (props: IconProps) => (
-    <ThemedIcon
-      lightVariant="/icons/github_light.svg"
-      darkVariant="/icons/github_dark.svg"
-      alt="GitHub"
-      {...props}
-    />
+    <GitHub props={props} className="h-5 w-5 fill-black dark:fill-white" />
   ),
   githubInverted: (props: IconProps) => (
-    <ThemedIcon
-      darkVariant="/icons/github_light.svg"
-      lightVariant="/icons/github_dark.svg"
-      alt="GitHub"
-      {...props}
-    />
+    <GitHub props={props} className="h-3 w-3 fill-white dark:fill-black" />
   ),
   linkedin: (props: IconProps) => (
     <Image
@@ -60,6 +51,7 @@ export const Icons = {
       width={16}
       height={16}
       className={props.className}
+      unoptimized
     />
   ),
   filePdf: (props: IconProps) => <File {...props} />,

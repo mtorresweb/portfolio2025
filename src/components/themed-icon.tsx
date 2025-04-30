@@ -25,7 +25,7 @@ const ThemedIcon = ({
         className={`dark:hidden ${className}`}
         width={width}
         height={height}
-        unoptimized={true}
+        unoptimized
       />
       <Image
         src={darkVariant}
@@ -33,7 +33,7 @@ const ThemedIcon = ({
         className={`hidden dark:block ${className}`}
         width={width}
         height={height}
-        unoptimized={true}
+        unoptimized
       />
     </>
   );

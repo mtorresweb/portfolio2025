@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
+import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
@@ -32,6 +33,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     ref,
   ) => {
     const mousex = useMotionValue(Infinity);
+    const isMobile = useIsMobile();
 
     const renderChildren = () => {
       return React.Children.map(children, (child: any) => {
@@ -39,7 +41,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
           return React.cloneElement(child, {
             mousex,
             magnification,
-            distance,
+            distance: isMobile ? 0 : distance,
           } as DockIconProps);
         }
         return child;

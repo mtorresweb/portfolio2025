@@ -199,6 +199,7 @@ export const DATA = {
     },
     {
       title: "This Portfolio Website",
+      href: "#",
       active: true,
       description:
         "Engineered a personal portfolio website using Next.js, Typescript, and TailwindCSS, showcasing my projects and skills with a focus on performance and SEO.",

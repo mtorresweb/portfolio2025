@@ -16,7 +16,7 @@ export const DATA = {
     "Typescript",
     "Node.js",
     "Express",
-    "Postgres",
+    "PostgreSQL",
     "MySQL",
     "MongoDB",
     "TailwindCSS",

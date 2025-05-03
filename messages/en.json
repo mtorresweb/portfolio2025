@@ -1,11 +1,11 @@
 {
   "Metadata": {
     "name": "Michael Torres",
-    "description": "Full-stack Systems Engineer with expertise in React, Next.js, and Node.js."
+    "description": "Full-stack Systems Engineer with expertise in React, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
   },
   "Hero": {
     "greeting": "Hi, I'm {name} 👋",
-    "description": "Full-stack Systems Engineer with expertise in React, Next.js, and Node.js."
+    "description": "Full-stack Systems Engineer with expertise in React, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
   },
   "About": {
     "title": "About",
@@ -68,7 +68,7 @@
     "items": [
       {
         "title": "Real Time Chat",
-        "description": "Built a real-time chat application featuring user authentication, private messaging, and group chats, leveraging React, Express, and Socket.io."
+        "description": "Built a real-time chat application featuring user authentication, private messaging, and group chats, leveraging React, Express, and Socket.io. The application can be tested by creating two accounts in different browser tabs, different browsers, or different devices."
       },
       {
         "title": "Project and Task Management",

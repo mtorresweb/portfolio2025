@@ -1,11 +1,11 @@
 {
   "Metadata": {
     "name": "Michael Torres",
-    "description": "Full-stack Systems Engineer with expertise in React, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
+    "description": "Full-stack Systems Engineer with expertise in React, React Native, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
   },
   "Hero": {
     "greeting": "Hi, I'm {name} 👋",
-    "description": "Full-stack Systems Engineer with expertise in React, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
+    "description": "Full-stack Systems Engineer with expertise in React, React Native, Next.js, Node.js, and SQL/NoSQL databases like PostgreSQL and MongoDB."
   },
   "About": {
     "title": "About",

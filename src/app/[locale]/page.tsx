@@ -34,6 +34,7 @@ interface EducationItem {
   degree: string;
   start: string;
   end: string;
+  description?: string; // Add optional description field
 }
 
 interface CertificationItem {
@@ -158,6 +159,7 @@ export default async function Page(props: { params: Params }) {
                   title={education.school}
                   subtitle={education.degree}
                   period={`${education.start} - ${education.end}`}
+                  description={education.description} // Add description from translation
                 />
               </BlurFade>
             ))}

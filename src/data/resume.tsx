@@ -37,6 +37,8 @@ export const DATA = {
     "React Testing Library",
     "Figma",
     "Postman",
+    "Microsoft Office",
+    "Google Workspace",
   ],
   navbar: [
     { href: "#hero", icon: Icons.home },
@@ -94,14 +96,6 @@ export const DATA = {
       end: "2024",
     },
     {
-      school: "Cambridge",
-      href: "https://www.cambridgeenglish.org/exams-and-tests/linguaskill/",
-      degree: "Linguaskill English Test (CEFR) - B1",
-      logoUrl: "/icons/cambridge.png",
-      start: "2022",
-      end: "2022",
-    },
-    {
       school: "Open English",
       href: "https://www.openenglish.com/",
       degree: "English B2",
@@ -120,11 +114,11 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Real Time Chat",
+      title: "Real-Time Chat Application",
       href: "https://chatapp.michaelt.engineer",
       active: true,
       description:
-        "Built a real-time chat application featuring user authentication, private messaging, and group chats, leveraging React, Express, and Socket.io.",
+        "Developed a real-time chat application with user authentication, private messaging, and group chat features, utilizing React, Express, and Socket.io.",
       technologies: [
         "React",
         "Socket.io",
@@ -153,11 +147,11 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Project and Task Management",
+      title: "Project and Task Management Tool",
       href: "https://tasksapp.michaelt.engineer",
       active: true,
       description:
-        "Created a project and task management application with features for creating, updating, and deleting projects and tasks, using React, Express, and PostgreSQL.",
+        "Designed a project and task management application with features for creating, updating, and deleting projects and tasks, leveraging React, Express, and PostgreSQL.",
       technologies: [
         "React",
         "PostgreSQL",
@@ -188,7 +182,7 @@ export const DATA = {
       href: "https://template.michaelt.engineer",
       active: true,
       description:
-        "Designed a portfolio template using React, Sass and Framer Motion, featuring smooth animations and a responsive design.",
+        "Created a portfolio template using React, Sass, and Framer Motion, featuring smooth animations and a responsive design.",
       technologies: [
         "React",
         "Sass",
@@ -213,11 +207,11 @@ export const DATA = {
       video: "",
     },
     {
-      title: "This Portfolio Website",
+      title: "Personal Portfolio Website",
       href: "#",
       active: true,
       description:
-        "Engineered a personal portfolio website using Next.js, Typescript, and TailwindCSS, showcasing my projects and skills with a focus on performance and SEO.",
+        "Developed a personal portfolio website using Next.js, Typescript, and TailwindCSS, showcasing projects and skills with a focus on performance and SEO.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -237,6 +231,39 @@ export const DATA = {
         },
       ],
       image: "/images/portfolio.png",
+      imageAlign: "center",
+      video: "",
+    },
+    {
+      title: "Social Media Application",
+      href: "https://expo.dev/preview/update?message=Initial%20preview%20release&updateRuntimeVersion=1.0.0&createdAt=2025-05-07T19%3A06%3A28.672Z&slug=exp&projectId=aa937293-d403-4c39-b026-fd50f8f604b5&group=f8365701-ac1a-4c6a-a3da-10cf90cba85b",
+      active: true,
+      description:
+        "Built a social media application with Clerk authentication, post creation, bookmarks, likes, followers, and commenting features, leveraging React Native and Convex for real-time data synchronization. To test the app, go to the Expo link and scan the QR code with the Expo Go app.",
+      technologies: [
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "Convex",
+        "Clerk",
+        "Expo Router",
+        "React Navigation",
+        "Reanimated",
+        "Expo Secure Store",
+      ],
+      links: [
+        {
+          type: "Expo QR",
+          href: "https://expo.dev/preview/update?message=Initial%20preview%20release&updateRuntimeVersion=1.0.0&createdAt=2025-05-07T19%3A06%3A28.672Z&slug=exp&projectId=aa937293-d403-4c39-b026-fd50f8f604b5&group=f8365701-ac1a-4c6a-a3da-10cf90cba85b",
+          icon: <Icons.qr className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/mtorresweb/SpotLight",
+          icon: <Icons.githubInverted className="size-3" />,
+        },
+      ],
+      image: "/images/spotlight.jpg",
       imageAlign: "center",
       video: "",
     },
@@ -310,15 +337,6 @@ export const DATA = {
           href: "/docs/git.pdf",
         },
       ],
-    },
-    {
-      title: "Cambridge Linguaskill",
-      dates: "October 21, 2022",
-      location: "Remote",
-      description:
-        "Earned a B1 certification through the Cambridge Linguaskill test, demonstrating effective communication skills in English for professional and academic contexts.",
-      image: "/icons/cambridge.png",
-      links: [],
     },
     {
       title: "Open English",

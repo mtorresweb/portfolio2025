@@ -11,6 +11,7 @@ import {
   UserIcon,
   ShieldCheck,
   FolderOpen,
+  QrCode,
 } from "lucide-react";
 import ThemedIcon from "./themed-icon";
 import Image from "next/image";
@@ -20,6 +21,7 @@ import type { SVGProps } from "react";
 type IconProps = SVGProps<SVGSVGElement>;
 
 export const Icons = {
+  qr: (props: IconProps) => <QrCode {...props} />,
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   shield: (props: IconProps) => <ShieldCheck {...props} />,
   folder: (props: IconProps) => <FolderOpen {...props} />,

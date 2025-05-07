@@ -33,28 +33,24 @@
         "href": "https://aguachica.unicesar.edu.co/",
         "degree": "Ingeniería de Sistemas",
         "start": "2020",
-        "end": "2024"
-      },
-      {
-        "school": "Cambridge",
-        "href": "https://www.cambridgeenglish.org/exams-and-tests/linguaskill/",
-        "degree": "Prueba de inglés Linguaskill (MCER) - B1",
-        "start": "2022",
-        "end": "2022"
+        "end": "2024",
+        "description": "Gané habilidades en desarrollo de software Full Stack, incluyendo React, React Native, Next.js, Node.js, PHP, Java, C#, Python y bases de datos (SQL/NoSQL), con conocimientos prácticos en metodologías ágiles (SCRUM) y gestión de redes/servidores."
       },
       {
         "school": "Open English",
         "href": "https://www.openenglish.com/",
         "degree": "Inglés B2",
         "start": "2022",
-        "end": "2022"
+        "end": "2022",
+        "description": "Alcancé nivel B2 (MCER) con capacidad para comunicarme fluidamente en entornos profesionales, comprender textos técnicos y expresar ideas con claridad tanto oral como escrita."
       },
       {
         "school": "SENA",
         "href": "https://www.sena.edu.co/",
         "degree": "Técnico en Asistencia Administrativa",
         "start": "2018",
-        "end": "2019"
+        "end": "2019",
+        "description": "Adquirí competencias en gestión documental, administración de archivos, herramientas ofimáticas y coordinación de actividades administrativas para optimizar la eficiencia organizacional."
       }
     ]
   },
@@ -81,11 +77,16 @@
       {
         "title": "Este Portafolio Web",
         "description": "Desarrollé un sitio web de portafolio personal utilizando Next.js, Typescript y TailwindCSS, mostrando mis proyectos y habilidades con enfoque en rendimiento y SEO."
+      },
+      {
+        "title": "Red Social Full-Stack",
+        "description": "Red social full-stack con React Native y Convex, incluye autenticación, publicaciones, likes, comentarios y sincronización en tiempo real. Para probar la aplicación, puedes escanear el código QR de Expo con la aplicación Expo Go."
       }
     ],
     "links": {
       "website": "Sitio Web",
-      "source": "Código Fuente"
+      "source": "Código Fuente",
+      "expo qr": "Código QR de Expo"
     }
   },
   "Certifications": {
@@ -126,12 +127,6 @@
         "location": "Remoto",
         "description": "Dominé flujos de trabajo avanzados y mejores prácticas de Git para control de versiones en entornos colaborativos.",
         "certificate": "Certificado"
-      },
-      {
-        "title": "Cambridge Linguaskill",
-        "dates": "21 Oct, 2022",
-        "location": "Remoto",
-        "description": "Obtuve la certificación B1 a través del examen Cambridge Linguaskill, demostrando habilidades efectivas de comunicación en inglés para contextos profesionales y académicos."
       },
       {
         "title": "Open English",

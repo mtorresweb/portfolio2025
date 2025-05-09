@@ -267,6 +267,35 @@ export const DATA = {
       imageAlign: "center",
       video: "",
     },
+    {
+      title: "Music Player Application",
+      href: "https://expo.dev/preview/update?slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f",
+      active: true,
+      description:
+        "A sleek music player app with playlists, favorites, artist browsing, search, and seamless playback. Includes volume control, dark mode, and a custom audio player. Scan the Expo QR code with Expo Go to test.",
+      technologies: [
+        "React Native",
+        "TypeScript",
+        "Expo",
+        "expo-av",
+        "zustand",
+        "React Navigation",
+      ],
+      links: [
+        {
+          type: "Expo QR",
+          href: "https://expo.dev/preview/update?slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f",
+          icon: <Icons.qr className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/mtorresweb/music-player",
+          icon: <Icons.githubInverted className="size-3" />,
+        },
+      ],
+      image: "/images/music-player.jpg",
+      imageAlign: "center",
+    },
   ],
   certifications: [
     {

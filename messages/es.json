@@ -81,6 +81,10 @@
       {
         "title": "Red Social Full-Stack",
         "description": "Red social full-stack con React Native y Convex, incluye autenticación, publicaciones, likes, comentarios y sincronización en tiempo real. Para probar la aplicación, puedes escanear el código QR de Expo con la aplicación Expo Go."
+      },
+      {
+        "title": "Reproductor de Música",
+        "description": "Una app de reproductor de música con listas, favoritos, exploración por artistas, búsqueda y reproducción fluida. Incluye control de volumen, modo oscuro y un reproductor personalizado. Escanea el código QR de Expo con Expo Go para probar."
       }
     ],
     "links": {

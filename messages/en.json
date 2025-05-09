@@ -81,6 +81,10 @@
       {
         "title": "Social Media Application",
         "description": "Full-stack social media app with React Native and Convex, featuring authentication, posts, likes, comments, and real-time synchronization. To test the app, scan the Expo QR code with the Expo Go app."
+      },
+      {
+        "title": "Music Player Application",
+        "description": "A sleek music player app with playlists, favorites, artist browsing, search, and seamless playback. Includes volume control, dark mode, and a custom audio player. Scan the Expo QR code with Expo Go to test."
       }
     ],
     "links": {

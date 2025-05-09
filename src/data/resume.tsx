@@ -269,7 +269,7 @@ export const DATA = {
     },
     {
       title: "Music Player Application",
-      href: "https://expo.dev/preview/update?slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f",
+      href: "https://expo.dev/preview/update?message=fix%3A%20correct%20paddingBottom%20logic%20in%20SafeLayout%20component&updateRuntimeVersion=1.0.0&createdAt=2025-05-09T03%3A23%3A53.828Z&slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f&group=b83f981e-45e2-4c5c-a7e5-538545df2e69",
       active: true,
       description:
         "A sleek music player app with playlists, favorites, artist browsing, search, and seamless playback. Includes volume control, dark mode, and a custom audio player. Scan the Expo QR code with Expo Go to test.",
@@ -284,7 +284,7 @@ export const DATA = {
       links: [
         {
           type: "Expo QR",
-          href: "https://expo.dev/preview/update?slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f",
+          href: "https://expo.dev/preview/update?message=fix%3A%20correct%20paddingBottom%20logic%20in%20SafeLayout%20component&updateRuntimeVersion=1.0.0&createdAt=2025-05-09T03%3A23%3A53.828Z&slug=exp&projectId=8b189c16-377f-47ee-8e98-9fc8877d9a0f&group=b83f981e-45e2-4c5c-a7e5-538545df2e69",
           icon: <Icons.qr className="size-3" />,
         },
         {

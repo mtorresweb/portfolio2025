@@ -295,6 +295,7 @@ export const DATA = {
       ],
       image: "/images/music-player.jpg",
       imageAlign: "center",
+      video: "",
     },
   ],
   certifications: [

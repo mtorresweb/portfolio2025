@@ -16,6 +16,7 @@ import { LanguageSwitcher } from "@/components/language-switcher";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 // Define interfaces for our translated data types
 interface WorkItem {
@@ -43,11 +44,6 @@ interface CertificationItem {
   location: string;
   description: string;
   certificate: string;
-}
-
-interface ProjectItem {
-  title: string;
-  description: string;
 }
 
 const BLUR_FADE_DELAY = 0.04;
@@ -78,6 +74,16 @@ export default async function Page(props: { params: Params }) {
     namespace: "Certifications",
   });
   const tContact = await getTranslations({ locale, namespace: "Contact" });
+
+  // Create a mapping between original projects and their translations
+  const translatedProjects = DATA.projects.map((project, index) => {
+    const translation = tProjects.raw("items")[index];
+    return {
+      ...project,
+      title: translation?.title || project.title,
+      description: translation?.description || project.description,
+    };
+  });
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
@@ -200,38 +206,84 @@ export default async function Page(props: { params: Params }) {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => {
-              const translatedProject = tProjects.raw("items")[
-                id
-              ] as ProjectItem;
-              return (
-                <BlurFade
-                  key={project.title}
-                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-                >
-                  <ProjectCard
-                    href={project.href}
-                    key={project.title}
-                    title={translatedProject?.title || project.title}
-                    description={
-                      translatedProject?.description || project.description
-                    }
-                    tags={project.technologies}
-                    image={project.image}
-                    imageAlign={project.imageAlign}
-                    video={project.video}
-                    links={project.links.map((link) => ({
-                      ...link,
-                      type:
-                        tProjects.raw("links")?.[link.type.toLowerCase()] ||
-                        link.type,
-                    }))}
-                  />
-                </BlurFade>
-              );
-            })}
-          </div>
+          <Tabs defaultValue="react" className="w-full">
+            <TabsList className="mx-auto w-full max-w-[800px] mb-4">
+              <TabsTrigger value="nextjs" className="hover:cursor-pointer">
+                Next.JS
+              </TabsTrigger>
+              <TabsTrigger className="hover:cursor-pointer" value="react">
+                React
+              </TabsTrigger>
+              <TabsTrigger
+                className="hover:cursor-pointer"
+                value="react-native"
+              >
+                React Native
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="nextjs">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+                {translatedProjects
+                  .filter((project) => project.technologies.includes("Next.js"))
+                  .map((project) => (
+                    <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12}>
+                      <ProjectCard
+                        href={project.href}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.technologies}
+                        image={project.image}
+                        imageAlign={project.imageAlign}
+                        video={project.video}
+                        links={project.links}
+                      />
+                    </BlurFade>
+                  ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="react">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+                {translatedProjects
+                  .filter((project) => project.technologies.includes("React"))
+                  .map((project) => (
+                    <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12}>
+                      <ProjectCard
+                        href={project.href}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.technologies}
+                        image={project.image}
+                        imageAlign={project.imageAlign}
+                        video={project.video}
+                        links={project.links}
+                      />
+                    </BlurFade>
+                  ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="react-native">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+                {translatedProjects
+                  .filter((project) =>
+                    project.technologies.includes("React Native"),
+                  )
+                  .map((project) => (
+                    <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12}>
+                      <ProjectCard
+                        href={project.href}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.technologies}
+                        image={project.image}
+                        imageAlign={project.imageAlign}
+                        video={project.video}
+                        links={project.links}
+                      />
+                    </BlurFade>
+                  ))}
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 

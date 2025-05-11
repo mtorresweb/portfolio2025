@@ -6,7 +6,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import Markdown from "react-markdown";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -72,7 +72,9 @@ export const ResumeCard = ({
             {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
           </CardHeader>
           {description && (
-            <div className="mt-2 text-xs sm:text-sm">{description}</div>
+            <div className="mt-2 text-xs sm:text-sm">
+              <Markdown>{description}</Markdown>
+            </div>
           )}
         </div>
       </Card>

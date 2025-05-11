@@ -85,6 +85,18 @@ export const DATA = {
       description:
         "Provided technical support to students and faculty, managed IT infrastructure, and contributed to the development of internal applications to enhance operational efficiency.",
     },
+    {
+      company: "Freelance",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Freelance Developer",
+      logoUrl: "/icons/icon.png",
+      start: "2023",
+      end: "Present",
+      description:
+        "Led the design and development of custom web solutions for clients across various industries, focusing on scalability, clean code, and user experience. Key projects include:\n• A symbolic computation application with full support for mathematical notation using LaTeX.\n• An end-to-end platform for a local transportation company to manage services, drivers, vehicles, and incident tracking, featuring real-time dashboards and data visualization.\n• Institutional repository systems with advanced file management, permission control, and GitHub integration to support academic collaboration and project traceability.",
+    },
   ],
   education: [
     {
@@ -129,7 +141,7 @@ export const DATA = {
         "Express",
         "Node.js",
         "JWT",
-      ],
+      ] as string[],
       links: [
         {
           type: "Website",
@@ -160,7 +172,7 @@ export const DATA = {
         "Node.js",
         "JWT",
         "Redux Toolkit",
-      ],
+      ] as string[],
       links: [
         {
           type: "Website",
@@ -189,7 +201,7 @@ export const DATA = {
         "Framer Motion",
         "React Markdown",
         "Node.js",
-      ],
+      ] as string[],
       links: [
         {
           type: "Website",
@@ -222,7 +234,7 @@ export const DATA = {
         "Next Intl",
         "Motion",
         "React Markdown",
-      ],
+      ] as string[],
       links: [
         {
           type: "Source",
@@ -250,7 +262,7 @@ export const DATA = {
         "React Navigation",
         "Reanimated",
         "Expo Secure Store",
-      ],
+      ] as string[],
       links: [
         {
           type: "Expo QR",
@@ -280,7 +292,7 @@ export const DATA = {
         "expo-av",
         "zustand",
         "React Navigation",
-      ],
+      ] as string[],
       links: [
         {
           type: "Expo QR",

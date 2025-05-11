@@ -22,6 +22,15 @@
         "start": "09/2024",
         "end": "12/2024",
         "description": "Como Monitor de Sistemas, proporcioné soporte técnico a estudiantes y profesores, asistiendo en la gestión de sistemas y resolución de problemas. También contribuí al desarrollo de aplicaciones internas, mejorando la infraestructura digital de la universidad."
+      },
+      {
+        "company": "Freelance",
+        "href": "#",
+        "title": "Desarrollador Freelance",
+        "location": "Remoto",
+        "start": "2023",
+        "end": "Presente",
+        "description": "Como desarrollador freelance, he liderado el diseño y desarrollo de soluciones web personalizadas para clientes de diversas industrias. Proyectos clave incluyen una aplicación de cálculo simbólico con soporte para LaTeX, una plataforma para gestionar servicios de transporte con paneles en tiempo real y un repositorio institucional con gestión avanzada de archivos e integración con GitHub."
       }
     ]
   },
